@@ -1,0 +1,46 @@
+/*Fixes and responsive */
+
+
+
+/* Header */
+
+
+@media screen and (max-width: 1440px) {
+    .container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+/*breakpoint 1025px */
+@media screen and (max-width:1024px){
+}
+
+/*breakpoint 962px */
+@media screen and (max-width:962px){    
+}
+
+/*breakpoint 770px */
+@media screen and (max-width:769px){
+    /* New Products Section */
+    .new_products .products_col {
+        width: 100%;
+        float: none;
+    }
+    .new_products .product_text {
+        bottom: 0;
+    }
+    .new_products .product_text p {
+        display: none;
+    }
+}
+
+/*breakpoint 660px */
+@media screen and (max-width:660px){
+}
+/*todo -500px*/
+
+/*breakpoint 512px */
+@media screen and (max-width:511px){
+    /* Parallex Section */
+}
