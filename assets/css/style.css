@@ -161,3 +161,25 @@ body {
     font-size: 24px;
     margin-top: 10px;
 }
+
+
+/*News events sections*/
+.news_events .section_body {
+    overflow: hidden;
+}
+.news_events .news_event_holder {
+    height: 400px;
+    padding: 20px;
+    float: left;
+    max-width: 25%;
+}
+.news_events .news_event_holder.main_event {
+    max-width: 50%;
+}
+.news_events .news_item,.news_events .news_item a{
+    height: 100%;
+    width: 100%;
+}
+.news_event_holder.split_event .news_item {
+    height: 50%;
+}
