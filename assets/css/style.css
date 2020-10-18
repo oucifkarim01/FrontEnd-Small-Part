@@ -12,6 +12,7 @@
 
     --shadow-1: 0px 0px 2px 0px rgb(0 0 0 / 45%);
     --shadow-1-hover: 0px 0px 2px 0px rgb(0 0 0 / 45%);
+    --shadow-hover:   2px 2px 8px 0px #0000005e;
     --slide-shadow:0px 0px 12px 1px rgb(0 0 0 / 38%);
     --trans-1 : .1s all ease-in-out;
     --trans-2 : .2s all ease-in-out;
@@ -31,10 +32,13 @@
     cursor: pointer;
     transition: var(--trans-1);
 }
-
+.section{
+    --space-val:10px;
+}
 .section .section_title {
     margin-left: var(--space-val);
     padding: 10px 0;
+    margin-top: 15px;
 }
 .section .section_title h2 {
     text-transform: capitalize;
@@ -97,6 +101,7 @@ body {
     width: 100%;
     background: var(--color-w);
     overflow: hidden;
+    transition: var(--trans-2);
 }
 .new_products .product a,
 .new_products .product .product_image  {
@@ -132,6 +137,9 @@ body {
 .new_products a:hover .product_text {
     bottom: 0;
 }
+.new_products a:hover {
+    box-shadow: var(--shadow-hover);
+}
 /* .new_products .product_text .show_icon {
     position: absolute;
     left: 0;
@@ -166,6 +174,7 @@ body {
 /*News events sections*/
 .news_events .section_body {
     overflow: hidden;
+    margin-bottom: 25px;
 }
 .news_events .news_event_holder {
     height: 400px;
@@ -185,7 +194,8 @@ body {
     height: 50%;
 }
 .news_events .news_item {
-    padding: 5px;
+    margin: 5px;
+    background: url("../img/back.jpg");
 }
 .news_events .news_item a{
     padding: 20px;
@@ -194,31 +204,37 @@ body {
 }
 .news_events .news_item a:hover{
     padding-top: 30px;
-    box-shadow: 2px 2px 8px 0px #00000024;
+    box-shadow: var(--shadow-hover);
+}
+.news_event_holder .news_item {
+    font-size: 16px;
+}
+.news_event_holder.split_event .news_item{
+    font-size: 14px;
 }
 .news_item .event_time {
     margin-top: 30px;
 }
 .news_item .event_time span {
     font-weight: 300;
-    font-size: 14px;
+    font-size: .9em;
 }
 .news_item .event_name {
     margin-top: 20px;
 }
 .news_item .event_name h3{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.2em;
 }
 .news_item .event_desc {
     margin-top: 10px;
 }
 .news_item .event_desc p{
-    font-size: 13px;
+    font-size: .9em;
     line-height: 1.3;
     margin-top: 5px;
 }
 .news_events .main_event a{
-    background: var(--dark-primary-color);
+    background: #0e5facb8;
     color: var(--color-grey);
 }
